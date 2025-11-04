@@ -1,7 +1,7 @@
 AIM:
 To write a C program to search for a given element in an array using the Linear Search algorithm and display its position if found.
 
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
     int i, n, key, found = 0;
