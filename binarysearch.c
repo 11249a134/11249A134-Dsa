@@ -35,9 +35,10 @@ int main()
         }
         else
         {
-        low = mid + 1;//the key is larger, adjust the low bound to search the right half?
+        low = mid + 1;
         }
     }
-    printf("Element not found\n");//loop ends without finding the element, print a failure message
+    printf("Element not found\n");
     return 0;
+
 }
