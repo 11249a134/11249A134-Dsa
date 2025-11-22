@@ -2,7 +2,41 @@
 To write a C program to perform all operations on a Doubly Linked List, including insertion 
 (beginning, position, end), deletion (beginning, position, end, by value), searching, and
 is playing the list in forward and backward directions.
-
+ALGORITHM:
+1. CreateNode(data)
+ Allocate memory for a new node
+ Assign data to the node
+ Set prev = NULL and next = NULL
+ Return the node
+2. InsertAtBeginning(head, data)
+ Create a new node
+ If list is empty
+ → new node becomes head
+ Else
+ → new node’s next = head
+ → head->prev = new node
+ → head = new node
+3. InsertAtEnd(head, data)
+ Create a new node
+ If list is empty
+ → new node becomes head
+ Else traverse to last node
+ Insert node at the end using pointers
+4. InsertAtPosition(head, data, pos)
+ If position is 1 → call InsertAtBeginning
+ Traverse until (pos – 1)
+ Insert node between previous and next nodes
+ Update prev and next pointers
+5. DeleteNode(head, value)
+ If list is empty → stop
+ If head contains valu
+ → move head and delete node
+ Else search for value
+ Update links and free the memory
+6. DisplayList(head)
+ Traverse from head to end
+ Print each node’s data
+//program
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -234,3 +268,4 @@ int main() {
         }
     }
 }
+
