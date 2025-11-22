@@ -66,3 +66,4 @@ int main() {
 RESULT:
 The stack was successfully implemented using an array.
 The given string was reversed correctly using push and pop operations of the stack.
+
