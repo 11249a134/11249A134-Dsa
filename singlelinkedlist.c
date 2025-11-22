@@ -1,5 +1,38 @@
 // Aim: To implement a C program that performs all basic operations  on a single linked list: insertion at beginning, end, specific position,and displaying the linked list.
-
+ALGORITHM:
+1. Algorithm for Insertion at Beginning
+ Start
+ Create a new node
+ Assign data to the new node
+ Set new node’s next pointer to current head
+ Update head to the new node
+ Stop
+2. Algorithm for Insertion at End
+ Start
+ Create a new node
+ If list is empty, head = new node
+ Else traverse to last node
+ Set last node’s next to new node
+ Stop
+3. Algorithm for Insertion at Position
+ Start
+ If position = 1, insert at beginning
+ Traverse list to reach (position - 1)th node
+ Insert new node after this node
+ Stop
+4. Algorithm for Deletion by Value
+ Start
+ If list is empty, print message
+ If head contains value, delete head
+ Else traverse until node before the node to be deleted
+ Remove node by adjusting links
+ Free memory
+ Stop
+5. Algorithm for Display
+ Traverse from head to end
+ Print each node’s data
+ Stop
+//program:
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -127,4 +160,5 @@ int main() {
     }
 
     return 0;
+
 }
