@@ -1,5 +1,20 @@
 /*AIM: To find the required element in Binary Search*/
-PROGRAM:
+/*ALGORITHM:
+Step 1: Start
+Step 2: Input the number of elements n
+Step 3: Input the sorted array elements A[0] to A[n-1]
+Step 4: Input the element to search, called key
+Step 5: Initialize:
+  low = 0
+  high = n - 1
+Step 6: Repeat Steps 7–10 while low <= high
+Step 7: Calculate mid = (low + high) / 2
+Step 8: If A[mid] == key, print "Element found at position mid" and go to Step 11
+Step 9: If A[mid] < key, set low = mid + 1
+Step 10: Else, set high = mid - 1
+Step 11: If low > high, print "Element not found"
+Step 12: Stop
+/*PROGRAM:
 #include <stdio.h>
 int main()
 {
@@ -42,3 +57,4 @@ int main()
     return 0;
 
 }
+
