@@ -1,4 +1,34 @@
 //Aim:- To perform circular queue operations using array
+//ALGORITHM:
+1. Initialization
+Read queue size n.
+Set:
+front = -1
+rear = -1
+max_size = n
+2. ENQUEUE (Insert element)
+Check overflow condition:
+(rear + 1) % max_size == front
+If overflow → print message and return.
+Else:
+If queue is empty (front == -1):
+front = rear = 0
+Else:
+rear = (rear + 1) % max_size
+Insert element at queue[rear].
+3. DEQUEUE (Delete element)
+Check underflow:
+front == -1
+If yes → print message.
+Else:
+Save deleted element = queue[front]
+If there was only one element (front == rear):
+front = rear = -1
+Else:
+front = (front + 1) % max_size
+Display deleted item.
+4. Repeat Process
+Ask user whether to continue: "yes" or "no".
 //PROGRAM:
 
 #include<stdio.h>
@@ -78,4 +108,5 @@ int main()
 		scanf("%s",choice);
 	}
 	while(strcmp(choice,"no"));
+
 }
